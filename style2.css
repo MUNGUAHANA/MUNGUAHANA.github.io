@@ -1,0 +1,120 @@
+{
+    margin: 10px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("nerve.ttf");
+  }
+  
+SEction{
+    margin: 500px 0px 30px 30px;
+}
+section{
+    
+    margin: 500px 0px 15px 15px;
+   
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg2.png);
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    font-size: 100%;
+    column-count: 2;
+    color:rgb(236, 229, 229)
+    
+}ul{
+    float:right;
+    list-style-type:none;
+    min-height: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+} ul li{
+    display: inline-block;
+}ul li a{
+    text-decoration:none;
+    color:rgb(104, 78, 78);
+    padding: 5px 20px;
+    border: 1px solid trasparent;
+    transition: 0.5 ease;
+} ul li a hover{
+    background-color:rgb(224, 164, 164);
+    color: rgb(179, 16, 16);
+}ul li.Active a{
+    background-color:rgb(63, 52, 52);
+    color: rgb(104, 89, 89);
+}
+.button{
+    position: absolute;
+    top: 17%;
+    left:25%;
+    transform: translate(-50%,-50%);
+}.btn{
+    border: 1px solid rgb(90, 74, 74);
+    padding: 5px 20px;
+    color: rgb(189, 171, 171);
+    transition: 0.5 ease;
+    font-size:18px;
+    text-decoration: none;
+} .btn:hover {
+background-color:#fff;
+color: #000;
+}
+.button2{
+    position: absolute;
+    top: 17%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    
+}.btn{
+    border: 1px solid rgb(90, 74, 74);
+    padding: 5px 20px;
+    color: rgb(189, 171, 171);
+    transition: 0.5 ease;
+    font-size:18px;
+    text-decoration: none;
+} .btn:hover {
+background-color:#fff;
+color: #000;
+}
+
+.flex-container {
+    display: grid;
+  }  
+  
+  .flex-container > div {
+    background-color: #9c6e6e;
+    margin: 50px;
+    padding: 20px;
+    font-size: 30px;
+    transform:translate(-15%,20%);
+    box-sizing: border-box; 
+    border-top-right-radius: 20% 50%;
+    box-shadow: -30px 5px 5px rgb(230, 123, 123);
+    font-family: myFirstFont;
+
+        
+  }
+  .form{
+    transition: width 2s;
+    height: 150%;
+    transform:translate(-150%,20%);
+    
+  }
+  form:hover {
+    width: 300px;
+  }
+  @media only screen and (max-width: 1200px){
+    .header{
+    column-count: 1;
+    
+    }
+    }
+      
