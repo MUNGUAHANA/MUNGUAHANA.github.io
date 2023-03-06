@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>AFUDE</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="Afude.js"></script>
     <meta name="viewport" content="width=devicewidt
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
+
     <header>
         <div class="main">
             <dir class="logo"> 
@@ -15,13 +17,14 @@
                 </dir>
             <ul>
                 <li class="Active">
-                <a href="#">Email : afude@gmail.com</a>
+                <a href="#">Email : afudedrc73@gmail.com</a>
                 <a href="#">Tél : +243 (0)998665732, +243(0) 998668719, +243(0) 994453083, +243(0) 824877378</a>
             </li>
             </ul>
         </div>
         <div class="adress">
             <SEction>
+                
                 <P1> 
                     <h1> comment nous contacter?</h1>
                         
@@ -33,28 +36,114 @@
          <li>Dans la province du Sud-Kivu,</li>
         <li>Dans la province du Nord-Kivu,</li>	 
          <li>	Dans la province de l’Ituri </li>
+         <li>	Dans la province de Tanganyika </li>
+         <li>
+            <div class="buttonImg">
+                <a href="images.html" class="BTN">
+                  Quelques activités de l'organisation AFUDE. Cliquez!
+                    </a>
+            </div>
+         </li>
         </ul>
         
                 </P1>
             </SEction>
+            
+        <section>
             <div class="flex-container">
                 <div>Give us your opion about this organization </div>
               </div> 
         </div>
         <div class="button">
             <a href="index.html" class="btn">
-                <span class="material-symbols-outlined">
-                    arrow_back
-                    </span>
                Retour
                 </a>
-        </div>
-        <form action="/url" method="GET">
-            <p>Please enter some text below to coment this organisation:
-            </p>  <br>  
-            <input type="text">
-            <button type="submit">Submit</button> 
-        </form>
+        </div> 
+        <div id="Error"> </div> 
+    
+            <form id="form" action="/url" method="GET">
+                <ul>
+                    <li><label for="name">Enter your three names:</label>  </li>
+                    <li><input type="text" id="name" name="name" required></li>
+                    <li><label for="adress">Enter your Adress:</label></li>
+                    <li><input type="text" id="adress" name="adress" placeholder="your country and your city" required></li>
+                    <li> <label for="date">The date:</label></li>
+                    <li><input type="date" id="date" name="date" required>
+                    <li><label for="email">E-mail:</label></li>
+                    <li><input type="email" id="email" name="email" placeholder="it ust include @"required></li>
+                    <li><label for="number">Your telephon number:</label></li>
+                    <li> <input type="tel" id="number" name="number" placeholder="it must be shift" required></li>
+                    <fieldset id="gender">
+                    <legend>Quel est votre genre?</legend>
+                        <ul>
+                          <li>
+                            <label for="M">Masculin</label>
+                            <input type="checkbox" id="M" name="M" value="Masculin" />
+
+                          </li>
+                          <li>
+                            <label for="F">Femminin</label>
+              <input type="checkbox" id="F" name="F" value="F" />
+                
+                          </li>
+                        </ul>
+                      </fieldset>
+                     <fieldset id="first">
+                        <legend>A combien pensez-vous que cette organisation est importante pour contribuer à un développement durable en RD Congo?</legend>
+                        <ul>
+                          <li>
+                            <label for="faible">Entre 15% à 25%</label>
+              <input type="checkbox" id="faible" name="faible" value="Entre 15% à 25%" />
+                          </li>
+                          <li>
+                            <label for="moyen">Entre 30% à 55%</label>
+              <input type="checkbox" id="moyen" name="moyen" value="Entre 30% à 55%" />
+                
+                          </li>
+                          <li>
+                            <label for="bien ">Entre 55% à 90%</label>
+              <input type="checkbox" id="bien" name="bien" value="Entre 55% à 90%" />
+                          </li>
+                        </ul>
+                      </fieldset>
+                      <form>
+                        <fieldset id="second">
+                          <legend>Selon vous, quels sont les grqnd défis auxquels les femmes et filles font face en RD Congo?</legend>
+                          <legend>NB: Vous pouvez tout cocher ou cocher ce que vous pensez!</legend>
+                          <ul>
+                            <li>
+                              <label for="argument1">La non confiance en elles</label>
+                <input type="radio" id="argument1" name="argument1" value="La non confiance en elles" checked />
+                
+                
+                            </li>
+                            <li>
+                              <label for="argument2">La discrimination</label>
+                <input type="radio" id="argument2" name="argument2" value="La discrimination" />
+                  
+                            </li>
+                            <li>
+                              <label for="argument3">La sous estimation</label>
+                <input type="radio" id="argument3" name="argument3" value="La sous estimation" />
+                            </li>
+                          </ul>
+                        </fieldset>
+                    <li>
+                        <li> <p>Please enter some text below to coment this organisation:</p> </li> 
+                        <li><input type="text" id="comment" name="comment" placeholder=" Enter anything but consistent" required></li>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><input type="button" id="bt" value="Envoyez" onclick="saveFile()" /> </li>
+                </ul>
+                
+            </form>
+        </section>
+        
         
     </header>
 </body>

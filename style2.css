@@ -20,7 +20,7 @@ section{
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./bg2.png);
     height: 150vh;
     background-size: cover;
     background-position: center;
@@ -103,18 +103,12 @@ color: #000;
         
   }
   .form{
-    transition: width 2s;
-    height: 150%;
-    transform:translate(-150%,20%);
+    
+    transform:translate(-50%,20%);
     
   }
-  form:hover {
-    width: 300px;
-  }
-  @media only screen and (max-width: 1200px){
-    .header{
-    column-count: 1;
-    
-    }
+  
+  @media only screen and (max-width: 600px){
+   
     }
       
