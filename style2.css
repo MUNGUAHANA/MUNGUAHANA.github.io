@@ -18,18 +18,22 @@ section{
     margin: 500px 0px 15px 15px;
    
 }
-
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./bg2.png);
-    height: 150vh;
-    background-size: cover;
+.BTN{
+    color:rgb(210, 126, 126);
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(43, 41, 41, 0.5)), url(./bg2.png);
+    height:    250vh;
+    /*background-size: cover;*/
     background-position: center;
     min-height: 100px;
-    font-size: 100%;
-    column-count: 2;
-    color:rgb(236, 229, 229)
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
     
-}ul{
+    color:rgb(245, 242, 242)
+    
+}
+ul{
     float:right;
     list-style-type:none;
     min-height: 10px;
@@ -38,7 +42,9 @@ header{
     font-size: 20px;
 } ul li{
     display: inline-block;
-}ul li a{
+}
+
+ul li a{
     text-decoration:none;
     color:rgb(104, 78, 78);
     padding: 5px 20px;
@@ -51,13 +57,21 @@ header{
     background-color:rgb(63, 52, 52);
     color: rgb(104, 89, 89);
 }
+.buttonImg{
+ position: absolute;
+    top: 40%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    color: #e8d5d5;
+    font-size: 70px;
+}
 .button{
     position: absolute;
     top: 17%;
     left:25%;
     transform: translate(-50%,-50%);
 }.btn{
-    border: 1px solid rgb(90, 74, 74);
+    border: 1px solid rgb(145, 106, 106);
     padding: 5px 20px;
     color: rgb(189, 171, 171);
     transition: 0.5 ease;
@@ -75,7 +89,7 @@ color: #000;
     
 }.btn{
     border: 1px solid rgb(90, 74, 74);
-    padding: 5px 20px;
+    padding: 5px 10px;
     color: rgb(189, 171, 171);
     transition: 0.5 ease;
     font-size:18px;
@@ -85,18 +99,19 @@ background-color:#fff;
 color: #000;
 }
 
-.flex-container {
-    display: grid;
-  }  
+    .flex-container {
+    
+    }  
   
   .flex-container > div {
     background-color: #9c6e6e;
-    margin: 50px;
-    padding: 20px;
-    font-size: 30px;
-    transform:translate(-15%,20%);
+    margin: 90px;
+    top: 50%;
+    padding: 90px;
+    font-size: 50px;
+    transform:translate(-5%,20%);
     box-sizing: border-box; 
-    border-top-right-radius: 20% 50%;
+    border-top-right-radius: 90% 50%;
     box-shadow: -30px 5px 5px rgb(230, 123, 123);
     font-family: myFirstFont;
 
@@ -104,11 +119,21 @@ color: #000;
   }
   .form{
     
-    transform:translate(-50%,20%);
+    transform:translate(-90%,80%);
     
   }
+  .nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+     position: absolute; 
+    padding: 10px;
+    top: 25%;
+    left:50%;
+    transform: translate(-10%,-50%);
+}
   
   @media only screen and (max-width: 600px){
-   
     }
       

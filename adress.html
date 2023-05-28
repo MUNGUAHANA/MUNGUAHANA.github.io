@@ -8,9 +8,16 @@
     <meta name="viewport" content="width=devicewidt
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
-
-    <header>
+    <header >
+      <nav class="nav" >
+        <div class="button">
+          <a href="mains.html" class="btn">
+              A propos de l'ONG AFUDE
+              </a>
+              <a href="adress.html" class="btn">
+                  Adresse de l'ONG AFUDE</a>
+      </div>
+      </nav>
         <div class="main">
             <dir class="logo"> 
                  <img src="AFUDE.jpg" width="100" >
@@ -18,25 +25,28 @@
             <ul>
                 <li class="Active">
                 <a href="#">Email : afudedrc73@gmail.com</a>
-                <a href="#">Tél : +243 (0)998665732, +243(0) 998668719, +243(0) 994453083, +243(0) 824877378</a>
+                <a href="#">Tél : +243(0) 998668719, +243 (0)998665732, +243(0) 994453083, +243(0) 824877378</a>
             </li>
             </ul>
         </div>
+      </header>
+        <body> 
         <div class="adress">
             <SEction>
-                
-                <P1> 
                     <h1> comment nous contacter?</h1>
                         
-                    Sise N°1B Av. de l’Athénée, Quartier Ndendere, Commune d’Ibanda/ Bukavu
-        Tél : +243 (0)998665732, +243(0) 998668719, +243(0) 994453083, +243(0) 824877378
-         Email : afude@gmail.com
-        Nous sommes représentés dans 4 provinces de la République Démocratique du Congo à Savoir : 
-        <ul>
-         <li>Dans la province du Sud-Kivu,</li>
+                    <ul>  Sise N°1B Av. de l’Athénée, Quartier Ndendere, Commune d’Ibanda/ Bukavu
+        Tél : +243 +243(0) 998668719, (0)998665732,  +243(0) 994453083, +243(0) 824877378
+         Email : afudedrc73@gmail.com</ul>
+
+         <ul>
+         Nous sommes représentés dans 4 provinces de la République Démocratique du Congo à Savoir : 
+        <li>Dans la province du Sud-Kivu,</li>
         <li>Dans la province du Nord-Kivu,</li>	 
          <li>	Dans la province de l’Ituri </li>
-         <li>	Dans la province de Tanganyika </li>
+         <li>	Dans la province de Tanganyika </li></ul>
+        <ul>
+
          <li>
             <div class="buttonImg">
                 <a href="images.html" class="BTN">
@@ -46,12 +56,12 @@
          </li>
         </ul>
         
-                </P1>
+              
             </SEction>
             
         <section>
             <div class="flex-container">
-                <div>Give us your opion about this organization </div>
+                <div>Donnez nous votre opinion à propos de cette orgnaisation </div>
               </div> 
         </div>
         <div class="button">
@@ -61,17 +71,17 @@
         </div> 
         <div id="Error"> </div> 
     
-            <form id="form" action="/url" method="GET">
+            <form style="background-color: coral;" id="form" action="/url" method="GET">
                 <ul>
-                    <li><label for="name">Enter your three names:</label>  </li>
+                    <li><label for="name">Entrez vos noms:</label>  </li>
                     <li><input type="text" id="name" name="name" required></li>
-                    <li><label for="adress">Enter your Adress:</label></li>
+                    <li><label for="adress">Entrez votre adresse:</label></li>
                     <li><input type="text" id="adress" name="adress" placeholder="your country and your city" required></li>
-                    <li> <label for="date">The date:</label></li>
+                    <li> <label for="date">La date:</label></li>
                     <li><input type="date" id="date" name="date" required>
                     <li><label for="email">E-mail:</label></li>
                     <li><input type="email" id="email" name="email" placeholder="it ust include @"required></li>
-                    <li><label for="number">Your telephon number:</label></li>
+                    <li><label for="number">Entrez votre numéro de téléphone:</label></li>
                     <li> <input type="tel" id="number" name="number" placeholder="it must be shift" required></li>
                     <fieldset id="gender">
                     <legend>Quel est votre genre?</legend>
@@ -108,7 +118,7 @@
                       </fieldset>
                       <form>
                         <fieldset id="second">
-                          <legend>Selon vous, quels sont les grqnd défis auxquels les femmes et filles font face en RD Congo?</legend>
+                          <legend>Selon vous, quels sont les grand défis auxquels les femmes et filles font face en RD Congo?</legend>
                           <legend>NB: Vous pouvez tout cocher ou cocher ce que vous pensez!</legend>
                           <ul>
                             <li>
@@ -143,8 +153,18 @@
                 
             </form>
         </section>
+        <p ondblclick="myFunction()">Doublez-cliquer ici pour copier la localisation de l'organisation.</p>
+        <p id="demo">
+        </p>
         
-        
-    </header>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML =  href="https://goo.gl/maps/raDVxYMto1PgAPP29";
+}
+</script>
 </body>
+
+<footer>
+ 
+</footer>
 </html>
