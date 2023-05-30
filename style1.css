@@ -9,7 +9,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    min-height: 100px;
+    min-height: 70px;
 }
 
 
@@ -58,7 +58,58 @@ ul{
 background-color:#fff;
 color: #000;
 }
-
-@media only screen and (max-width: 600px){
-    
+.footer a{
+    background-color:rgb(243, 204, 204);
+} 
+.footer{
+    background: var(--bl);
+    background-color:rgb(243, 204, 204);
+    text-align: center;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    font-size: 20px;
+}
+@media (max-width: 600px){
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./bg1A.png);
+        height: 100vh;
+        background-size: ;
+        background-position: center;
+        min-height: 70px;
+    }
+    .title{
+        position: absolute;
+        top: 65%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    } 
+    .title h1{
+    color: #fff;
+    font-size: 70px;
+}
+    .title h1{
+        color: #fff;
+        font-size: 30px;
+    }
+    .btn{
+        border: 1px solid rgb(90, 74, 74);
+        padding: 7px 10px;
+        color: rgb(189, 171, 171);
+        transition: 0.5 ease;
+        font-size:15px;
+        text-decoration: none;
+    } 
+    .button{
+        position: absolute;
+        top: 94%;
+        left:50%;
+        transform: translate(-60%,-50%);} 
+    .footer{
+        background: var(--bl);
+        background-color:rgb(98, 64, 64);
+        text-align: center;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        font-size: 10px;
+}
 }

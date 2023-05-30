@@ -70,101 +70,95 @@
                 </a>
         </div> 
         <div id="Error"> </div> 
+        <form action="">
+              <ul>
+                <div class="inputBox">
+                  <li><label for="name">Entrez vos noms:</label>  </li>
+                  <li><input type="text" id="name" name="name" required></li>
+                </div>
+                <div class="inputBox">
+                  <li><label for="adress">Entrez votre adresse:</label></li>
+                  <li><input type="text" id="adress" name="adress" placeholder="your country and your city" required></li></div> 
+                  <div class="inputBox">
+                  <li> <label for="date">La date:</label></li>
+                  <li><input type="date" id="date" name="date" required></div> 
+                    <div class="inputBox">
+                  <li><label for="email">E-mail:</label></li>
+                  <li><input type="email" id="email" name="email" placeholder="it ust include @"required></li></div> 
+                  <div class="inputBox">
+                  <li><label for="number">Entrez votre numéro de téléphone:</label></li>
+                  <li> <input type="tel" id="number" name="number" placeholder="it must be shift" required></li></div> 
+                  <fieldset id="gender">
+                  <legend>Quel est votre genre?</legend>
+                      <ul>
+                        <li>
+                          <label for="M">Masculin</label>
+                          <input type="checkbox" id="M" name="M" value="Masculin" />
     
-            <form style="background-color: coral;" id="form" action="/url" method="GET">
-                <ul>
-                    <li><label for="name">Entrez vos noms:</label>  </li>
-                    <li><input type="text" id="name" name="name" required></li>
-                    <li><label for="adress">Entrez votre adresse:</label></li>
-                    <li><input type="text" id="adress" name="adress" placeholder="your country and your city" required></li>
-                    <li> <label for="date">La date:</label></li>
-                    <li><input type="date" id="date" name="date" required>
-                    <li><label for="email">E-mail:</label></li>
-                    <li><input type="email" id="email" name="email" placeholder="it ust include @"required></li>
-                    <li><label for="number">Entrez votre numéro de téléphone:</label></li>
-                    <li> <input type="tel" id="number" name="number" placeholder="it must be shift" required></li>
-                    <fieldset id="gender">
-                    <legend>Quel est votre genre?</legend>
-                        <ul>
-                          <li>
-                            <label for="M">Masculin</label>
-                            <input type="checkbox" id="M" name="M" value="Masculin" />
+                        </li>
+                        <li>
+                          <label for="F">Femminin</label>
+            <input type="checkbox" id="F" name="F" value="F" />
+              
+                        </li>
+                      </ul>
+                    </fieldset>
 
-                          </li>
-                          <li>
-                            <label for="F">Femminin</label>
-              <input type="checkbox" id="F" name="F" value="F" />
-                
-                          </li>
-                        </ul>
-                      </fieldset>
-                     <fieldset id="first">
-                        <legend>A combien pensez-vous que cette organisation est importante pour contribuer à un développement durable en RD Congo?</legend>
+                   <fieldset id="first">
+                      <legend>A combien pensez-vous que cette organisation est importante pour contribuer à un développement durable en RD Congo?</legend>
+                      <ul>
+                        <li>
+                          <label for="faible">Entre 15% à 25%</label>
+            <input type="checkbox" id="faible" name="faible" value="Entre 15% à 25%" />
+                        </li>
+                        <li>
+                          <label for="moyen">Entre 30% à 55%</label>
+            <input type="checkbox" id="moyen" name="moyen" value="Entre 30% à 55%" />
+              
+                        </li>
+                        <li>
+                          <label for="bien ">Entre 55% à 90%</label>
+            <input type="checkbox" id="bien" name="bien" value="Entre 55% à 90%" />
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <form>
+                      <fieldset id="second">
+                        <legend>Selon vous, quels sont les grand défis auxquels les femmes et filles font face en RD Congo?</legend>
+                        <legend>NB: Vous pouvez tout cocher ou cocher ce que vous pensez!</legend>
                         <ul>
                           <li>
-                            <label for="faible">Entre 15% à 25%</label>
-              <input type="checkbox" id="faible" name="faible" value="Entre 15% à 25%" />
+                            <label for="argument1">La non confiance en elles</label>
+              <input type="radio" id="argument1" name="argument1" value="La non confiance en elles" checked />
+              
+              
                           </li>
                           <li>
-                            <label for="moyen">Entre 30% à 55%</label>
-              <input type="checkbox" id="moyen" name="moyen" value="Entre 30% à 55%" />
+                            <label for="argument2">La discrimination</label>
+              <input type="radio" id="argument2" name="argument2" value="La discrimination" />
                 
                           </li>
                           <li>
-                            <label for="bien ">Entre 55% à 90%</label>
-              <input type="checkbox" id="bien" name="bien" value="Entre 55% à 90%" />
+                            <label for="argument3">La sous estimation</label>
+              <input type="radio" id="argument3" name="argument3" value="La sous estimation" />
                           </li>
                         </ul>
                       </fieldset>
-                      <form>
-                        <fieldset id="second">
-                          <legend>Selon vous, quels sont les grand défis auxquels les femmes et filles font face en RD Congo?</legend>
-                          <legend>NB: Vous pouvez tout cocher ou cocher ce que vous pensez!</legend>
-                          <ul>
-                            <li>
-                              <label for="argument1">La non confiance en elles</label>
-                <input type="radio" id="argument1" name="argument1" value="La non confiance en elles" checked />
-                
-                
-                            </li>
-                            <li>
-                              <label for="argument2">La discrimination</label>
-                <input type="radio" id="argument2" name="argument2" value="La discrimination" />
-                  
-                            </li>
-                            <li>
-                              <label for="argument3">La sous estimation</label>
-                <input type="radio" id="argument3" name="argument3" value="La sous estimation" />
-                            </li>
-                          </ul>
-                        </fieldset>
-                    <li>
-                        <li> <p>Please enter some text below to coment this organisation:</p> </li> 
-                        <li><input type="text" id="comment" name="comment" placeholder=" Enter anything but consistent" required></li>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li><input type="button" id="bt" value="Envoyez" onclick="saveFile()" /> </li>
-                </ul>
-                
+                  <li>
+                      <li> <p>Please enter some text below to coment this organisation:</p> </li> 
+                      <li><input type="text" id="comment" name="comment" placeholder=" Enter anything but consistent" required></li>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li><input type="button" id="bt" value="Envoyez" onclick="saveFile()" /> </li>
+              </ul>
+          
             </form>
+  
         </section>
-        <p ondblclick="myFunction()">Doublez-cliquer ici pour copier la localisation de l'organisation.</p>
-        <p id="demo">
-        </p>
-        
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML =  href="https://goo.gl/maps/raDVxYMto1PgAPP29";
-}
-</script>
 </body>
-
-<footer>
- 
-</footer>
 </html>
