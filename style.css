@@ -193,7 +193,7 @@
     .btn{
         font-size: 10px;
     }
-    .navbar:not(:first-child){display: block;}
+    .navbar:not(:first-child){display: none;}
     .navbar .icon{
         folat: right;
         display: block;
