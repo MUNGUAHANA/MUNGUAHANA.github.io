@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;  
-    top: O; left: 0; right: 0;
+    top:0; left: 0; right: 0;
     z-index: 1000;
     position: fixed;
     padding: 1.5rem 7%;  
@@ -20,18 +20,18 @@
 }
 .title{
     position: absolute;
-    top: 47%;
+    top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    font-size: 35px;
+    font-size: 45px;
     color: white;
 }
 .button{
     position: absolute;
-    top: 74%;
+    top: 79%;
     left:50%;
     transform: translate(-50%,-50%);
-}.btn{
+}.btn1{
     border: 1px solid rgb(90, 74, 74);
     padding: 5px 20px;
     color: rgb(189, 171, 171);
@@ -39,18 +39,44 @@
     font-size:18px;
     text-decoration: none;
 } 
-.sectionAccueil{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg1A.png);
-    height: 90vh;
-    background-size: cover;
-    min-height: 100px;
+.btn2{
+    border: 1px solid rgb(90, 74, 74);
+    padding: 5px 20px;
+    color: rgb(189, 171, 171);
+    transition: 0.5 ease;
+    font-size:18px;
+    text-decoration: none;
+} 
+.btn{
+    border: 1px solid rgb(90, 74, 74);
+    padding: 5px 20px;
+    color: rgb(189, 171, 171);
+    transition: 0.5 ease;
+    font-size:18px;
+    text-decoration: none;
+} 
+.BB{
+   
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bg1A.png');
 }
+.sectionAccueil{
+    margin: auto;
+    padding: 22%;
+}
+
 .footer{
     text-align: center;
     text-decoration-style: solid;
     background-color: black;
     color: aliceblue;
-    height: 10vh;
+    height: 15vh;
+}
+.footer2{
+    text-align: center;
+    text-decoration-style: solid;
+    background-color: black;
+    color: aliceblue;
+    height: 15vh;
 }
 .main-info{
     border: 10px solid;
@@ -60,29 +86,32 @@
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: blanchedalmond;
-    
+    margin-top: 150px;
 }
+    .menu{
+         position: absolute;
+        top: 450%;
+        left:50%;
+        transform: translate(-50%,-50%); 
+        
+    }
+
 .body-main{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg1B.png);
-    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bg1B.png');
+    min-height: 100vh;
     background-size: cover;
-    min-height: 100px;
+    background-attachment: fixed;
 }
 .share{
     padding: 20px;
     font-size: 30px;
-   text-align: center;
+    text-align: center;
     margin: 5px 2px;
 }
 .fab{
     color: rgb(167, 105, 29);
 }
-.menu{
-    position: absolute;
-    top: 290%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
+
 .menu2{
     position: absolute;
     top: 90%;
@@ -93,7 +122,16 @@
     background-color: rgb(167, 105, 29);
     color: #000;
     }
+.btn1:hover {
+    background-color: rgb(167, 105, 29);
+    color: #000;
+    }
 
+.btn2:hover {
+    background-color: rgb(167, 105, 29);
+    color: #000;
+    }
+        
 .h22{
     color: rgb(167, 105, 29);
 }
@@ -107,8 +145,8 @@
     position: relative; 
     border-width: auto; 
     border-style: solid; 
-    width: 50%;
-    height: 450px;
+    width: 70%;
+    height: 370px;
     background-color: #000;
 }
 .adress{
@@ -118,6 +156,10 @@
     height: auto;
     background-color:rgb(167, 105, 29);
 }
+.images{
+    width:25rem;
+    height:15rem
+}
 .activities{
     
     border-width: thick;
@@ -125,6 +167,7 @@
     width: auto;
     height: auto;
     background-color:rgb(167, 105, 29);
+    
     
 }
 .box-container{
@@ -156,19 +199,128 @@
 .footer1{
     background-color: #000;
 }
+
+.auth{
+    color: rgb(167, 105, 29)
+}
 .TITRE{
     color: rgb(167, 105, 29);
 }
 .body-adress{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bg2.png');
 }
 .images{
     display: none;
 }
 
 
+@media (max-width:768px){
+    .title{
+        font-size: 10px;
+    }
 
-@media (max-width:991px){
+   .para{
+    font-size: 5px;
+   }
+
+   .button{
+    position: relative;
+    top: 74%;
+    left:60%;
+    transform: translate(-50%,-50%);
+}
+    .btn {
+        font-size: 7px;      
+    }
+    .btn1{
+        font-size: 7px;  
+    } 
+    .btn2{
+        font-size: 7px;  
+    }
+    .main-info{
+        width: 70%;  
+        padding: 10%;
+        margin-top: 150px;
+    
+    }
+    .information{
+        font-size: 15px;
+    }
+    .images{
+        width:25rem;
+        height:15rem;
+    }
+    .footer1{
+      width: 24rem;
+    }
+    .box-container .box h3 {
+        width: 23rem;
+    }
+    .box-container .box {
+        width: 23rem;
+    }
+    .row{
+        margin: auto;
+        padding: 10%; 
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        height: 1000px;
+        background-color: #000;
+    }
+    .adress{
+        font-size: 10px;
+    }
+    .images{
+        height: 20rem;
+        width:  20rem;
+       }
+         
+       .menu2 .btn1{
+        display: none;
+    }
+    .menu2{
+        position: absolute;
+        top: 170%;
+       
+    }
+    .menu .btn{
+        display: none;
+
+    }
+    .menu{
+        position: absolute;
+        top: 567%;
+    }
+    
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 0rem;
+        }
+
+        .button{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-60%,-50%);
+        }
+
+        .title{
+            position: absolute;
+            top: 40%;
+            
+        }
+        .footer2{
+            margin-top: 352px;
+        }
+       
+}
+
+
+/* @media (max-width:991px){
     .header{
         padding: 1.5rem 2rem;
     }
@@ -193,7 +345,7 @@
     .btn{
         font-size: 10px;
     }
-    .navbar:not(:first-child){display: none;}
+    .navbar:not(:first-child){display: block;}
     .navbar .icon{
         folat: right;
         display: block;
@@ -270,4 +422,4 @@
     .header{
         padding: 1.5rem 2rem;
     } 
-}
+} */
