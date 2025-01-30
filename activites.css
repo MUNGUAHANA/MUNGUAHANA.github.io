@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background: #ab8fbe;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('NAD6-20250129-WA0010.jpg');
+    color: white;
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.brochure, .brochure2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.panel, .panel1, .panel2, .panel3 {
+    background: #1e243b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.panel2 {
+    background: #535d08;
+}
+
+.panel:hover, .panel1:hover, .panel2:hover, .panel3:hover {
+    transform: scale(1.05);
+}
+.btnB{
+   
+    display: contents;
+}
+
+h2 {
+    color: #a3941b;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.panel h3 {
+    color: #52233a;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.panel p, .panel1 p, .panel2 p, .panel3 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.panel img, .panel1 img, .panel2 img, .panel3 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .panel, .panel1, .panel2, .panel3 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brochure, .brochure2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .panel, .panel1, .panel2, .panel3 {
+        width: 90%;
+    }
+}
